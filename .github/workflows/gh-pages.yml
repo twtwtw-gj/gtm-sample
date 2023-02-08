@@ -15,12 +15,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Yarn
-        uses: actions/setup-node@v2
-        with:
-          check-latest: true
-          cache: "yarn"
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
